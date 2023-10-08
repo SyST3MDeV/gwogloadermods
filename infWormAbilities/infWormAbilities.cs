@@ -11,7 +11,7 @@ public class EntryPoint{
     public static void UnLoad(GameObject consoleGameObject){
         Debug.Log("Unloaded Infinite Worm Abilites!");
         Harmony harmony = new Harmony("dev.gwogloader.infWormAbilities");
-        harmony.UnpatchAll(harmonyID: "dev.gwogloader.infKits");
+        harmony.UnpatchAll(harmonyID: "dev.gwogloader.infWormAbilities");
     }
 }
 
