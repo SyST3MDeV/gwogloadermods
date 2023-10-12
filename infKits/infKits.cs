@@ -15,11 +15,11 @@ class EntryPoint{
     }
 }
 
-[HarmonyPatch(typeof(PardnerEquipment))]
+[HarmonyPatch(typeof(RelayManager))]
 [HarmonyPatch("OnUse")]
 class InfKits
 {
-    static bool Prefix(PardnerEquipment __instance)
+    static bool Prefix(RelayManager __instance)
     {
         return false;
     }
